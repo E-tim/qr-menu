@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/qr-menu/static/css/main.7ddffdcc.css",
+    "main.js": "/qr-menu/static/js/main.d53662f4.js",
+    "static/media/beer.gif": "/qr-menu/static/media/beer.7e391ab241ef5e5aac81.gif",
+    "static/media/water3.png": "/qr-menu/static/media/water3.0fba4f9e92e8a2b4630d.png",
+    "static/media/water.png": "/qr-menu/static/media/water.1f348c837c2e59d798ea.png",
+    "static/media/water1.jpg": "/qr-menu/static/media/water1.0ab6a3e600a4eeb0f20d.jpg",
+    "static/media/drink.jpg": "/qr-menu/static/media/drink.943ec57b9470215b041e.jpg",
+    "static/media/img1.jpg": "/qr-menu/static/media/img1.26c5b6e5acaea73f2a8d.jpg",
+    "index.html": "/qr-menu/index.html",
+    "main.7ddffdcc.css.map": "/qr-menu/static/css/main.7ddffdcc.css.map",
+    "main.d53662f4.js.map": "/qr-menu/static/js/main.d53662f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ddffdcc.css",
+    "static/js/main.d53662f4.js"
+  ]
+}
