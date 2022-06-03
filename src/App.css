@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+
+.topImage {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 80%;
+    height: 200px;
+}
+.home {
+    background-color: #f2f2f2;
+    margin: 10px 50px 10px 50px;
+    padding: 20px;
+}
+.see {
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 6%;
+    font-size: 20px;
+}
+.myFar {
+    position: absolute;
+    right: 13px;
+    top: 6%;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .myFar {
+        display: none;
+    }
+}
+.noShow {
+    display: none;
+}
+.menuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*   beer component  */
+
+.resultFromFirebase {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: lightseagreen;
+    margin: 10px;
+    padding: 0 20px;
+    border-radius: 12px;
+    width: 60vw;
+}
+.resultFromFirebase p {
+    color: white;
+    text-transform: uppercase;
+}
+.resultFromFirebase span {
+    color: white;
+    position: absolute;
+    left: 30%;
+}
+.myForm {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+form input {
+    height: 30px;
+}
+form button {
+    height: 35px;
+}
+@media screen and (max-width: 900px) {
+    .resultFromFirebase {
+        justify-content: left;
+    }
+    .resultFromFirebase span {
+        position: absolute;
+        left: 58%;
+    }
+    .myForm {
+        display: none;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*  beerResult componet */
+
+.fontAwesome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 40%;
+    width: 100px;
+}
+.hideFontAwesome {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.updateform {
+    display: none;
+}
+.updateformOpen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgreen;
+    height: 100px;
+    position: absolute;
+    padding: 10px;
+    top: 40%;
+    left: 5%;
+}
+.updateformOpen input {
+    border: 1px solid white;
+    margin: 5px;
+}
+.updateformOpen button {
+    border: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 900px) {
+    .fontAwesome {
+        display: none;
+    }
+    .updateformOpen {
+        display: none;
+    }
+    /* .myForm {
+        display: none;
+    } */
+
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact {
+    background-color: #003300;
+    margin: 3%;
+    padding: 2% 2% 5% 2%;
 }
+.contactDisplay {
+    display: flex;
+}
+.contact input {
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contact textarea {
+    width: 250px;
+    height: 90px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contact button {
+    width: 256px;
+    font-size: 20px;
+}
+.contact form {
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactDisplay {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact input {
+        width: 60vw;
+    }
+    .contact textarea {
+        width: 60vw;
+    }
+    .contact button {
+        width: 61vw;
+    }
+    .contact form {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+
+

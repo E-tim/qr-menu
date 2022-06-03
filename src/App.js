@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Home from './components/Home';
+import Menu from './components/Menu';
+import Beer from './components/Beer';
+import Spirit from './components/Spirit';
+import NonAlcholic from './components/NonAlcholic';
+import Kitchen from './components/Kitchen';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import {auth} from "./firebase"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={ <Home/> }/>
+        <Route path='beer' element={ <Beer/> }/>
+        <Route path='spirit' element={ <Spirit/> }/>
+        <Route path='noalcohol' element={ <NonAlcholic/> }/>
+        <Route path='kitchen' element={ <Kitchen/> }/>
+      </Routes>
     </div>
   );
 }
